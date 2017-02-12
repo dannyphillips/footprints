@@ -16,7 +16,7 @@ class App extends Component {
         </p>
         {Object.keys(posters).map(function(park){
           return (
-            <Link to={`/parks/${posters[park]}`}>
+            <Link to={`/parks/${park}`}>
               <img src={posters[park]} alt={park} key={park} width={"100px"}/>
             </Link>
           );
