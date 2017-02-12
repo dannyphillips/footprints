@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import nps from '../public/images/nps-logo.png';
 import * as posters from './national_parks';
 import './App.css';
@@ -14,8 +15,13 @@ class App extends Component {
         <p className="App-intro">
         </p>
         {Object.keys(posters).map(function(park){
-          return <img src={posters[park]} alt={park} key={park} width={"100px"}/>
+          return (
+            <Link to={`/parks/${posters[park]}`}>
+              <img src={posters[park]} alt={park} key={park} width={"100px"}/>
+            </Link>
+          );
         })}
+        {this.props.children}
       </div>
     );
   }
