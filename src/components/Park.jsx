@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as posters from './national_parks';
+import * as posters from '../definitions/posters';
 import './App.css';
 
 class Park extends Component {
@@ -7,10 +7,8 @@ class Park extends Component {
   render() {
     const { params: { name } } = this.props;
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to {name}</h2>
-        </div>
+      <div>
+        <h2>{name} National Park</h2>
         <img src={posters[name]} alt={name} key={name} width={"100px"}/>
       </div>
     );
