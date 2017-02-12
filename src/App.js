@@ -14,7 +14,7 @@ class App extends Component {
         <p className="App-intro">
         </p>
         {Object.keys(posters).map(function(park){
-          return <img src={posters[park]} alt={park} width={"100px"}/>
+          return <img src={posters[park]} alt={park} key={park} width={"100px"}/>
         })}
       </div>
     );
