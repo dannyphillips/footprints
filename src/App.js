@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import arches from '../public/images/arches.jpg';
+import photos from './national_parks';
 import './App.css';
 
 class App extends Component {
@@ -13,7 +13,9 @@ class App extends Component {
         </div>
         <p className="App-intro">
         </p>
-        <img src={arches} alt={"arches"} width={"100px"}/>
+        <img src={photos.acadia} alt={"arches"} width={"100px"}/>
+        <img src={photos.american_samoa} alt={"arches"} width={"100px"}/>
+        <img src={photos.arches} alt={"arches"} width={"100px"}/>
       </div>
     );
   }
