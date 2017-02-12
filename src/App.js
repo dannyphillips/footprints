@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import photos from './national_parks';
+import * as photos from './national_parks';
 import './App.css';
 
 class App extends Component {
   render() {
+    debugger;
     return (
       <div className="App">
         <div className="App-header">
