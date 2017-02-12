@@ -10,7 +10,7 @@ class Park extends Component {
     return (
       <div>
         <h2>{changeCase.titleCase(name)} National Park</h2>
-        <img src={posters[name]} alt={name} key={name} width={"100px"}/>
+        <img src={posters[name]} alt={name} key={name} width={"500px"}/>
       </div>
     );
   }
