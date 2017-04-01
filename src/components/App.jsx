@@ -18,7 +18,7 @@ class App extends Component {
            <Menu.Item
              onClick={this.handleItemClick}
            >
-             <img src={nps} />
+             <img src={nps} alt={nps}/>
            </Menu.Item>
          </Link>
 
