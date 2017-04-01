@@ -10,7 +10,7 @@ class Park extends Component {
       name: "badlands",
       date_founded: "Month Day, Year",
       size: "880 acres",
-      gps_location: "latitude, longitude",
+      gps_coordinates: "latitude, longitude",
       city: "City",
       state: "State",
       activiites: "Fishing, Hiking, Camping",
@@ -26,7 +26,7 @@ class Park extends Component {
         name,
         date_founded,
         size,
-        gps_location,
+        gps_coordinates,
         city,
         state,
         activiites,
@@ -37,8 +37,10 @@ class Park extends Component {
     return (
       <div>
         <h2>{changeCase.titleCase(name)} National Park</h2>
+        <h3>id: {id}</h3>
         <h3>Founded: {date_founded}</h3>
         <h3>Size: {size}</h3>
+        <h3>GPS Coordinates: {gps_coordinates}</h3>
         <h3>Location: {city}, {state}</h3>
         <h3>Climate: {climate}</h3>
         <h3>Activities: {activiites}</h3>

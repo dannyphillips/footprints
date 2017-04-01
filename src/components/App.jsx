@@ -6,7 +6,6 @@ import './App.css';
 
 class App extends Component {
   state = {}
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
     const { activeItem } = this.state
@@ -22,21 +21,22 @@ class App extends Component {
            </Menu.Item>
          </Link>
 
-         <Menu.Item
-           name='parks'
-           active={activeItem === 'parks'}
-           onClick={this.handleItemClick}
-         >
-           Parks
-         </Menu.Item>
-
-         <Menu.Item
-           name='sign-in'
-           active={activeItem === 'sign-in'}
-           onClick={this.handleItemClick}
-         >
-           Sign-in
-         </Menu.Item>
+         <Link to='/'>
+          <Menu.Item
+            name='parks'
+            active={activeItem === 'parks'}
+          >
+            Parks
+          </Menu.Item>
+         </Link>
+         <Link to='/signIn'>
+          <Menu.Item
+            name='sign-in'
+            active={activeItem === 'sign-in'}
+          >
+            Sign-in
+          </Menu.Item>
+         </Link>
        </Menu>
         {this.props.children}
       </div>
