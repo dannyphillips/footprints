@@ -46,7 +46,12 @@ class Park extends Component {
         <h3>Climate: {climate}</h3>
         <h3>Activities: {activiites}</h3>
         <h3>Tags: 
-          <Label color="olive" tag>{tags}</Label>
+          {
+            tags.forEach(function(tag){
+              // TODO: forEach does not return anything, will need to use a different function on Array
+              return <Label color="olive" tag>{tag}</Label>
+            })
+          }
         </h3>
         <img src={posters[name]} alt={name} key={name} width={"500px"}/>
       </div>
