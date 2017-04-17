@@ -37,6 +37,14 @@ class App extends Component {
             Sign-in
           </Menu.Item>
          </Link>
+         <Link to='/me'>
+          <Menu.Item
+            name='my-profile'
+            active={activeItem === 'my-profile'}
+          >
+            My Profile
+          </Menu.Item>
+         </Link>
        </Menu>
         {this.props.children}
       </div>

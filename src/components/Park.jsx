@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import changeCase from 'change-case';
+import { Label } from 'semantic-ui-react';
 import * as posters from '../definitions/posters';
 import './App.css';
 
@@ -44,7 +45,9 @@ class Park extends Component {
         <h3>Location: {city}, {state}</h3>
         <h3>Climate: {climate}</h3>
         <h3>Activities: {activiites}</h3>
-        <h3>Tags: {tags}</h3>
+        <h3>Tags: 
+          <Label color="olive" tag>{tags}</Label>
+        </h3>
         <img src={posters[name]} alt={name} key={name} width={"500px"}/>
       </div>
     );
