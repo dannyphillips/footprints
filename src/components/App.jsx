@@ -11,7 +11,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Navbar style={{"display": "none"}} activeItem={activeItem}/>
+        <Navbar activeItem={activeItem}/>
         {this.props.children}
       </div>
     );
