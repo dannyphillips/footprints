@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 import * as posters from '../definitions/posters';
-import './App.css';
+import './Home.css';
 
 class Home extends Component {
   render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import changeCase from 'change-case';
 import { Label } from 'semantic-ui-react';
 import * as posters from '../definitions/posters';
-import './App.css';
+import './Park.css';
 
 class Park extends Component {
   static defaultProps = {

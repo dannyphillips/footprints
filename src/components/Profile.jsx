@@ -1,26 +1,38 @@
 import React, { Component } from 'react';
-import changeCase from 'change-case';
-import { Label } from 'semantic-ui-react';
-import * as posters from '../definitions/posters';
-import './App.css';
+import { Link } from 'react-router';
+import './Profile.css';
 
-class Park extends Component {
-  static defaultProps = {
-    params2: {
-    },
+
+import * as posters from '../definitions/posters';
+
+class Profile extends Component {
+  myParks() {
+    return Object.keys(posters).map(function(park) {
+      if (park.length >= 15) {
+        return (
+          <Link to={`/parks/${park}`} key={park}>
+            <img src={posters[park]} alt={park} width={"100px"}/>
+          </Link>
+        );
+      }
+      else
+        return "";
+    })
   }
 
   render() {
-    const {
-      params2: {
-      }
-    } = this.props;
     return (
       <div>
         <h2>My Profile</h2>
+        <h3>My Parks</h3>
+        <div>
+        {
+          this.myParks()
+        }
+        </div>
       </div>
     );
   }
 }
 
-export default Park;
+export default Profile;

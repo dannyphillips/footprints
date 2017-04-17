@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
-import { Menu } from 'semantic-ui-react';
-import nps from '../../public/images/nps-logo.png';
+
+import Navbar from './Navbar';
 import './App.css';
 
 class App extends Component {
@@ -12,40 +11,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Menu stackable>
-          <Link to='/'>
-           <Menu.Item
-             onClick={this.handleItemClick}
-           >
-             <img src={nps} alt={nps}/>
-           </Menu.Item>
-         </Link>
-
-         <Link to='/'>
-          <Menu.Item
-            name='parks'
-            active={activeItem === 'parks'}
-          >
-            Parks
-          </Menu.Item>
-         </Link>
-         <Link to='/signIn'>
-          <Menu.Item
-            name='sign-in'
-            active={activeItem === 'sign-in'}
-          >
-            Sign-in
-          </Menu.Item>
-         </Link>
-         <Link to='/me'>
-          <Menu.Item
-            name='my-profile'
-            active={activeItem === 'my-profile'}
-          >
-            My Profile
-          </Menu.Item>
-         </Link>
-       </Menu>
+        <Navbar style={{"display": "none"}} activeItem={activeItem}/>
         {this.props.children}
       </div>
     );
