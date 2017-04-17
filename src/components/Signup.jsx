@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 import './Signin.css';
 
-class Signin extends Component {
+class Signup extends Component {
   static defaultProps = {
 
   }
@@ -11,16 +11,19 @@ class Signin extends Component {
   render() {
     return (
       <div>
-        <h2>Sign In</h2>
+        <h2>Sign Up</h2>
+        <label>First Name</label>
+        <input placeholder="Enter your first name"/>
+        <label>Last Name</label>
+        <input placeholder="Enter your last name"/>
         <label>Email</label>
         <input placeholder="Enter your email"/>
         <label>Password</label>
         <input placeholder="Enter your password"/>
-        <Link to={"me"}><button>Sign In</button></Link>
-        <Link to={"signup"}>Don't have an account?</Link>
+        <Link to={"signin"}><button>Sign Up</button></Link>
       </div>
     );
   }
 }
 
-export default Signin;
+export default Signup;
