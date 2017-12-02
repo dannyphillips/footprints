@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { Menu } from 'semantic-ui-react';
-import nps from '../../public/images/nps-logo.png';
+import nps from '../images/nps-logo.png';
 import './Navbar.css';
 
 class Navbar extends Component {

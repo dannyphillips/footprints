@@ -1,8 +1,12 @@
 {
-	"devDependencies": {
-		"lerna": "^2.5.1"
-	},
-	"scripts": {
+	"name": "footprints",
+  "version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+  "devDependencies": {
+    "lerna": "^2.5.1"
+  },
+  "scripts": {
     "start": "lerna run start"
   }
 }
