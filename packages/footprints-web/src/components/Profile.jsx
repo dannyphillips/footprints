@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import './Profile.css';
 
 
-import * as posters from '../definitions/posters';
+import * as posters from '../posters/posters';
 
 class Profile extends Component {
   myParks() {

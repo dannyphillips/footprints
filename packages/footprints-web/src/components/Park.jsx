@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import changeCase from 'change-case';
 import { Label } from 'semantic-ui-react';
-import * as posters from '../definitions/posters';
+import * as posters from '../posters/posters';
 import './Park.css';
 
 class Park extends Component {
