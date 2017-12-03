@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Router, IndexRoute, Route, browserHistory } from 'react-router'
 
 import App from './components/App';
-import Home from './components/Home';
+import { Home } from './components/Home';
 import Park from './components/Park';
 import Profile from './components/Profile';
 import Signup from './components/Signup';
