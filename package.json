@@ -4,8 +4,8 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^2.5.1",
-    "lerna-changelog": "^0.7.0"
+    "lerna": "2.5.1",
+    "lerna-changelog": "0.7.0"
   },
   "scripts": {
     "start": "lerna run start"

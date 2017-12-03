@@ -4,14 +4,14 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "change-case": "^3.0.1",
-    "firebase": "^4.7.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router": "^3.0.2",
+    "change-case": "3.0.1",
+    "firebase": "4.7.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-router": "3.2.0",
     "react-scripts": "1.0.17",
-    "semantic-ui-react": "^0.77.0",
-    "styled-components": "^2.2.4"
+    "semantic-ui-react": "0.77.0",
+    "styled-components": "2.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
