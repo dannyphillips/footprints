@@ -1,7 +1,13 @@
 {
   "lerna": "2.5.1",
-  "packages": [
-    "packages/*"
-  ],
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "packages": ["packages/*"],
+  "changelog": {
+    "labels": {
+      "Breaking Change": ":boom: Breaking Change",
+      "New Feature": ":rocket: New Feature",
+      "Bug Fix": ":bug: Bug Fix",
+      "Docs": ":memo: Documentation"
+    }
+  }
 }

@@ -1,10 +1,11 @@
 {
-	"name": "footprints",
+  "name": "footprints",
   "version": "0.0.0",
-	"private": true,
-	"license": "MIT",
+  "private": true,
+  "license": "MIT",
   "devDependencies": {
-    "lerna": "^2.5.1"
+    "lerna": "^2.5.1",
+    "lerna-changelog": "^0.7.0"
   },
   "scripts": {
     "start": "lerna run start"
