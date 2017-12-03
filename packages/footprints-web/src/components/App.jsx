@@ -25,7 +25,7 @@ export class App extends Component {
 
     return (
       <div className="App">
-        <Navbar activeItem={activeItem} data={parks}/>
+        <Navbar activeItem={activeItem}/>
         {this.props.children}
       </div>
     );
@@ -33,7 +33,7 @@ export class App extends Component {
   _fetchParks() {
     const parks = firebase.database().ref("parks");
     return parks.on("value", function(snapshot) {
-      return snapshot.val();
+      console.log(snapshot.val());
     });
   }
 
