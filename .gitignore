@@ -1,5 +1,3 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 
@@ -8,6 +6,9 @@
 
 # production
 /build
+
+# config
+/.vs_code
 
 # misc
 .DS_Store
