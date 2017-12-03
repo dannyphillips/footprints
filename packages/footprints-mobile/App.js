@@ -41,14 +41,15 @@ export default class App extends React.Component {
       );
     }
   }
+  _storeHighScore(userId, score) {
+    firebase.database().ref('users/' + userId).set({
+      highscore: score
+    });
+  }
 
   _loadResourcesAsync = async () => {
-    function storeHighScore(userId, score) {
-      firebase.database().ref('users/' + userId).set({
-        highscore: score
-      });
-    }
-    storeHighScore(6, 100);
+    this._storeHighScore(7, 100); // Verify POST to firebase works!
+    
     return Promise.all([
       Asset.loadAsync([
         require('./assets/images/robot-dev.png'),

@@ -4,6 +4,9 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "start": "exp start ios",
+    "ios": "exp ios",
+    "android": "exp android",
     "test": "node ./node_modules/jest/bin/jest.js --watch"
   },
   "jest": {
