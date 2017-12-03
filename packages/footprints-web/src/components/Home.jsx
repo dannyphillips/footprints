@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "react-router"
-import { Card, Icon, Label, Image } from 'semantic-ui-react'
-import styled from 'styled-components'
+import { Card, Label, Image } from 'semantic-ui-react'
 import * as posters from "../posters/posters"
 import "./Home.css"
 

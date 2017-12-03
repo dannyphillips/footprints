@@ -5,7 +5,7 @@ import './Profile.css';
 
 import * as posters from '../posters/posters';
 
-class Profile extends Component {
+export class Profile extends Component {
   myParks() {
     return Object.keys(posters).map(function(park) {
       if (park.length >= 15) {
@@ -34,5 +34,3 @@ class Profile extends Component {
     );
   }
 }
-
-export default Profile;

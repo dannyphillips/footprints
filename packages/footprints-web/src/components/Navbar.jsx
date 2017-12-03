@@ -4,7 +4,7 @@ import { Menu } from 'semantic-ui-react';
 import nps from '../images/nps-logo.png';
 import './Navbar.css';
 
-class Navbar extends Component {
+export class Navbar extends Component {
   state = {}
 
   render() {
@@ -50,5 +50,3 @@ class Navbar extends Component {
     );
   }
 }
-
-export default Navbar;

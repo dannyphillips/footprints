@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as firebase from "firebase";
 
-import Navbar from './Navbar';
+import { Navbar } from './Navbar';
 import './App.css';
 
 // Initialize Firebase
@@ -14,20 +14,27 @@ var config = {
   messagingSenderId: "576698370523"
 };
 firebase.initializeApp(config);
-class App extends Component {
+export class App extends Component {
   state = {};
 
   render() {
-    this._storeHighScore(5,100); // Verify POST to firebase works!
-    
+    this._storeHighScore(5, 100); // Verify POST to firebase works!
+    this._fetchParks(); // Get initial park data
+
     const { activeItem } = this.state;
 
     return (
       <div className="App">
-        <Navbar activeItem={activeItem} />
+        <Navbar activeItem={activeItem} data={parks}/>
         {this.props.children}
       </div>
     );
+  }
+  _fetchParks() {
+    const parks = firebase.database().ref("parks");
+    return parks.on("value", function(snapshot) {
+      return snapshot.val();
+    });
   }
 
   _storeHighScore(userId, score) {
@@ -39,5 +46,3 @@ class App extends Component {
       });
   }
 }
-
-export default App;

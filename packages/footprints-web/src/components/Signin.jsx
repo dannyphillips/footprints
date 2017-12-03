@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 import './Signin.css';
 
-class Signin extends Component {
+export class Signin extends Component {
   static defaultProps = {
 
   }
@@ -22,5 +22,3 @@ class Signin extends Component {
     );
   }
 }
-
-export default Signin;

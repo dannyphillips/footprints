@@ -4,7 +4,7 @@ import { Label } from 'semantic-ui-react';
 import * as posters from '../posters/posters';
 import './Park.css';
 
-class Park extends Component {
+export class Park extends Component {
   static defaultProps = {
     params2: {
       id: "1",
@@ -58,5 +58,3 @@ class Park extends Component {
     );
   }
 }
-
-export default Park;
