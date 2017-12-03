@@ -1355,7 +1355,7 @@ chalk@^2.0.0, chalk@^2.1.0, chalk@^2.3.0:
     escape-string-regexp "^1.0.5"
     supports-color "^4.0.0"
 
-change-case@^3.0.1:
+change-case@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/change-case/-/change-case-3.0.1.tgz#ee5f5ad0415ad1ad9e8072cf49cd4cfa7660a554"
   dependencies:
@@ -2712,7 +2712,7 @@ find-up@^2.0.0, find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
-firebase@^4.7.0:
+firebase@4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/firebase/-/firebase-4.7.0.tgz#31bf2f52adae0a5ca098a63532a3626c0ae09877"
   dependencies:
@@ -5371,7 +5371,7 @@ react-dev-utils@^4.2.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.2.0:
+react-dom@16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
   dependencies:
@@ -5384,7 +5384,7 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
 
-react-router@^3.0.2:
+react-router@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-3.2.0.tgz#62b6279d589b70b34e265113e4c0a9261a02ed36"
   dependencies:
@@ -5439,7 +5439,7 @@ react-scripts@1.0.17:
   optionalDependencies:
     fsevents "1.1.2"
 
-react@^16.2.0:
+react@16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
   dependencies:
@@ -5821,7 +5821,7 @@ selfsigned@^1.9.1:
   dependencies:
     node-forge "0.6.33"
 
-semantic-ui-react@^0.77.0:
+semantic-ui-react@0.77.0:
   version "0.77.0"
   resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.77.0.tgz#2119bc79f53f9764440b1e16ce13b2967557578d"
   dependencies:
@@ -6187,7 +6187,7 @@ style-loader@0.19.0:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
-styled-components@^2.2.4:
+styled-components@2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.2.4.tgz#dd87fd3dafd359e7a0d570aec1bd07d691c0b5a2"
   dependencies:
