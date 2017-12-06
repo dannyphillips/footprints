@@ -13,10 +13,18 @@ jobs:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
 
-      - run: yarn install
+      - run:
+          name: Install Dependencies & Build App
+          command: yarn
 
       - save_cache:
           paths: node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-      - run: yarn test
+      - run:
+          name: Run Unit Tests
+          command: yarn test
+
+      - run:
+          name: Deploy to gh-pages
+          command: lerna deploy
