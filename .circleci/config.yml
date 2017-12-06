@@ -17,7 +17,7 @@ jobs:
 
       - run:
           name: Setup Environment
-          command: echo 'export PATH=/path/to/foo/bin:$PATH' >> $BASH_ENV
+          command: echo 'export PATH=${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin' >> $BASH_ENV
 
       - run:
           name: Install Dependencies & Build App
