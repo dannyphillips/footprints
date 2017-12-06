@@ -10,8 +10,12 @@ jobs:
 
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-{{ checksum "yarn.lock" }}
           - v1-dependencies-
+
+      - run:
+          name: Install yarn
+          command: curl -o- -L https://yarnpkg.com/install.sh | bash
 
       - run:
           name: Install Dependencies & Build App
@@ -19,7 +23,7 @@ jobs:
 
       - save_cache:
           paths: node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
         
       - run:
           name: Run Unit Tests
