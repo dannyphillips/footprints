@@ -14,8 +14,8 @@ jobs:
           - v1-dependencies-
 
       - run:
-          name: Install yarn
-          command: curl -o- -L https://yarnpkg.com/install.sh | bash
+          name: Setup Environment
+          command: echo 'export PATH=${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin' >> $BASH_ENV;
 
       - run:
           name: Install Dependencies & Build App
