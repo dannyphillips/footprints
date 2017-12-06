@@ -1,21 +1,22 @@
 version: 2
-
 jobs:
   build:
     docker:
-      - image: circleci/node
+      - image: circleci/node:7.10
+    working_directory: ~/repo
+
     steps:
       - checkout
 
-      - run:
-          name: Run Yarn
-          command: yarn
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
 
-      - run:
-          name: Run Tests
-          command: yarn test
+      - run: yarn install
 
       - save_cache:
-          key: dependency-cache
-          paths:
-            - ~/.cache/yarn
+          paths: node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+        
+      - run: yarn test
