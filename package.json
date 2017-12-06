@@ -8,6 +8,7 @@
     "lerna-changelog": "0.7.0"
   },
   "scripts": {
-    "start": "lerna run start"
+    "start": "lerna run start",
+    "test": "echo 'it worked'"
   }
 }
