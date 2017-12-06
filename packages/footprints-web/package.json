@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --message='Published gh-pages [ci skip]' ",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
