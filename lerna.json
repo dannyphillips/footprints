@@ -2,6 +2,9 @@
   "lerna": "2.5.1",
   "version": "0.0.0",
   "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "parallel": true,
+  "useWorkspaces": true,
   "changelog": {
     "labels": {
       "Breaking Change": ":boom: Breaking Change",
