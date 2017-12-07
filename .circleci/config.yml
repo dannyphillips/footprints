@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:8.9.1
-    working_directory: ~/repo
+    working_directory: ~/footprints
 
     steps:
       - checkout
@@ -15,7 +15,7 @@ jobs:
 
       - run:
           name: Setup Environment
-          command: echo 'export PATH=${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin' >> $BASH_ENV
+          command: echo 'export PATH=${PATH}:${HOME}/footprints/node_modules/.bin' >> $BASH_ENV
 
       - run:
           name: Install Dependencies & Build App
