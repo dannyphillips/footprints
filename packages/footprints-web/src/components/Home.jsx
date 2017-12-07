@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router"
+import { Link } from "react-router-dom"
 import { Card, Label, Image } from 'semantic-ui-react'
 import * as posters from "../posters/posters"
 import "./Home.css"

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { Menu } from 'semantic-ui-react';
 import nps from '../images/nps-logo.png';
 import './Navbar.css';

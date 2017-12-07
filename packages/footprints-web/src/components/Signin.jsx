@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import { Button, Form } from 'semantic-ui-react';
 import * as firebase from 'firebase';
 
@@ -13,12 +12,10 @@ export class Signin extends Component {
    }
 
   handleChange = (e, { name, value }) => {
-    debugger;
     this.setState({ [name]: value })
   }
 
-  handleSubmit = (e, fields) => {
-    debugger;
+  handleSubmit = () => {
     const { email, password } = this.state;
     firebase
       .auth()
@@ -30,8 +27,6 @@ export class Signin extends Component {
   }
 
   render() {
-    const email = "g@google.com";
-    const password = "asfdsfdfs8";
     return <Form onSubmit={this.handleSubmit}>
         <Form.Input 
           name="email"
