@@ -6,6 +6,7 @@ export class Login extends React.Component {
   state = {
     redirectToReferrer: false
   };
+  
   login = () => {
     fakeAuth.authenticate(() => {
       this.setState(() => ({
@@ -13,6 +14,7 @@ export class Login extends React.Component {
       }));
     });
   };
+
   render() {
     const { from } = this.props.location.state || { from: { pathname: "/" } };
     const { redirectToReferrer } = this.state;

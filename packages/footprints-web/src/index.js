@@ -1,11 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-} from "react-router-dom";
-// import { Router, IndexRoute, Route, browserHistory } from 'react-router'
+import { BrowserRouter, Route } from "react-router-dom";
 
 import { App } from './components/App';
 import { Home } from './components/Home';
@@ -15,46 +10,21 @@ import { Signup } from './components/Signup';
 import { Signin } from './components/Signin';
 import { PrivateRoute } from './components/PrivateRoute';
 import { AuthButton } from './components/AuthButton';
-import { fakeAuth } from './components/fakeAuth';
 import { Login } from './components/Login';
 import './index.css';
 
-// ReactDOM.render(
-//   <Router history={browserHistory}>
-//     <Route path="/" component={App}>
-//       <IndexRoute component={Home} />
-//       <Route path="me" component={Profile} />
-//       <Route path="signup" component={Signup} />
-//       <Route path="signin" component={Signin} />
-//       <Route path="parks/:name" component={Park} />
-//     </Route>
-//   </Router>,
-//   document.getElementById('root')
-// );
-
-
-const Public = () => <h3>Public</h3>;
-const Protected = () => <h3>Protected</h3>;
-
-
-
-
 ReactDOM.render(
-  <Router>
+  <BrowserRouter>
     <div>
       <AuthButton />
-      <ul>
-        <li>
-          <Link to="/public">Public Page</Link>
-        </li>
-        <li>
-          <Link to="/protected">Protected Page</Link>
-        </li>
-      </ul>
-      <Route path="/public" component={Public} />
+      <Route path="/" component={App} />
+      <PrivateRoute path="/" component={Home} />
       <Route path="/login" component={Login} />
-      <PrivateRoute path="/protected" component={Protected} />
+      <Route path="/signup" component={Signup} />
+      <Route path="/signin" component={Signin} />
+      <PrivateRoute path="parks/:name" component={Park} />
+      <PrivateRoute path="/me" component={Profile} />
     </div>
-  </Router>,
-  document.getElementById('root')
+  </BrowserRouter>,
+  document.getElementById("root")
 );
