@@ -1,0 +1,11 @@
+
+{
+  "linters": {
+    "*.js": [
+      "npm run pretty:js",
+      "git add"
+    ],
+    "*.json": "jsonlint",
+    ".*rc": "jsonlint"
+  }
+}
