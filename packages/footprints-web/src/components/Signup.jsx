@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import './Signin.css';
-
 export class Signup extends Component {
   static defaultProps = {
 
@@ -20,7 +18,7 @@ export class Signup extends Component {
         <input placeholder="Enter your email"/>
         <label>Password</label>
         <input placeholder="Enter your password"/>
-        <Link to={"signin"}><button>Sign Up</button></Link>
+        <Link to={"login"}><button>Sign Up</button></Link>
       </div>
     );
   }

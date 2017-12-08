@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import * as firebase from 'firebase';
 
-import './Signin.css';
-
 export class Signin extends Component {
   static defaultProps = {};
   state = { 
@@ -38,7 +36,7 @@ export class Signin extends Component {
           label="Password" 
           placeholder="Enter your password" 
           onChange={this.handleChange} />
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Sign In</Button>
       </Form>;
   }
 }
