@@ -4,10 +4,18 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
+    "husky": "^0.14.3",
     "lerna": "2.5.1",
-    "lerna-changelog": "0.7.0"
+    "lerna-changelog": "0.7.0",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.1"
   },
+  "workspaces": ["packages/*"],
   "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna clean",
+    "precommit": "lint-staged",
+    "pretty": "lerna run pretty",
     "start": "lerna run start",
     "test": "echo 'it worked'"
   }
