@@ -1,6 +1,5 @@
 
 {
-  "gitDir": "../../",
   "linters": {
     "*.js": [
       "npm run pretty:js",

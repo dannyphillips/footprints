@@ -18,7 +18,7 @@
     "build": "lerna run build",
     "clean": "lerna clean",
     "precommit": "lint-staged",
-    "pretty": "lerna run pretty",
+    "pretty": "prettier --write --no-semi --single-quote",
     "start": "lerna run start",
     "test": "echo 'it worked'"
   }
