@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
+import styled from "styled-components";
 import * as firebase from "firebase";
 
 import { Navbar } from './Navbar';
@@ -11,7 +12,6 @@ import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { PrivateRoute } from "./PrivateRoute";
 import { AuthButton } from "./AuthButton";
-import './App.css';
 
 // Initialize Firebase
 var config = {
@@ -23,6 +23,10 @@ var config = {
   messagingSenderId: "576698370523"
 };
 firebase.initializeApp(config);
+
+const StyledApp = styled.div`
+  text-align: center;
+`;
 export class App extends Component {
   state = {};
 
@@ -50,7 +54,7 @@ export class App extends Component {
 
     return (
       <BrowserRouter>
-        <div className="App">
+        <StyledApp>
           <AuthButton />
           <Route path="/" component={Navbar} activeItem={activeItem}/>
           <Route path="/login" component={Login} />
@@ -59,7 +63,7 @@ export class App extends Component {
           <PrivateRoute path="/home" component={Home} />
           <PrivateRoute path="parks/:name" component={Park} />
           <PrivateRoute path="/me" component={Profile} />
-        </div>
+        </StyledApp>
       </BrowserRouter>
     );
   }

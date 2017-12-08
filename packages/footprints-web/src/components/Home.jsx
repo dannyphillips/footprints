@@ -1,16 +1,20 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { Card, Label, Image } from 'semantic-ui-react'
+import styled from "styled-components";
 import * as posters from "../posters/posters"
-import "./Home.css"
 
+const StyledCard = styled(Card)`
+  display: inline-block !important;
+  margin: 10px !important;
+`;
 export class Home extends React.Component {
 
   render() {
     return (
       Object.keys(posters).map(function(park) {
         return <Link to={`/parks/${park}`} key={park}>
-            <Card className="styled-card">
+            <StyledCard>
               <Image src={posters[park]} />
               <Card.Content>
                 <Card.Header>Yellowstone National Park</Card.Header>
@@ -24,7 +28,7 @@ export class Home extends React.Component {
                   Visited
                 </Label>
               </Card.Content>
-            </Card>
+            </StyledCard>
           </Link>;
       })
     );
