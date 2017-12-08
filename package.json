@@ -17,9 +17,20 @@
   "scripts": {
     "build": "lerna run build",
     "clean": "lerna clean",
+    "changelog": "lerna-changelog",
     "precommit": "lint-staged",
-    "pretty": "prettier --write --no-semi --single-quote",
     "start": "lerna run start",
     "test": "echo 'it worked'"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ],
+    "yarn.lock": [
+      "git rm --cached"
+    ],
+    "*.json": "jsonlint",
+    ".*rc": "jsonlint"
   }
 }
