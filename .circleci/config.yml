@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8.9.1
+      - image: circleci/node:8.9.1@sha256:cdd0ce105577e4ef6b492211ec4c3e9391a17db00f94201bfe8a0aa44410bf83
     working_directory: ~/footprints
 
     steps:
