@@ -5,7 +5,7 @@
   "license": "MIT",
   "homepage": "http://dannyphillips.github.io/footprints",
   "dependencies": {
-    "change-case": "3.0.1",
+    "change-case": "3.1.0",
     "firebase": "4.8.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
