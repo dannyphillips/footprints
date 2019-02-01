@@ -6,7 +6,7 @@
   "homepage": "http://dannyphillips.github.io/footprints",
   "dependencies": {
     "change-case": "3.0.1",
-    "firebase": "4.8.0",
+    "firebase": "5.8.2",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-router": "4.2.0",
