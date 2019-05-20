@@ -5,7 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "husky": "2.2.0",
-    "jsonlint": "1.6.2",
+    "jsonlint": "1.6.3",
     "lerna": "2.5.1",
     "lerna-changelog": "0.7.0",
     "lint-staged": "8.1.7",
