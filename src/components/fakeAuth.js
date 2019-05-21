@@ -5,5 +5,5 @@ export const fakeAuth = {
   },
   signout(cb) {
     this.isAuthenticated = false;
-  }
+  },
 };
