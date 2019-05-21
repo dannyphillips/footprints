@@ -3,24 +3,35 @@
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
+  "dependencies": {
+    "change-case": "3.1.0",
+    "firebase": "4.8.0",
+    "react": "16.2.0",
+    "react-dom": "16.8.6",
+    "react-router": "5.0.0",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "1.0.17",
+    "semantic-ui-react": "0.77.1",
+    "styled-components": "2.2.4"
+  },
   "devDependencies": {
     "husky": "2.3.0",
     "jsonlint": "1.6.3",
     "lerna": "2.5.1",
     "lerna-changelog": "0.7.0",
     "lint-staged": "8.1.7",
-    "prettier": "1.17.0"
+    "prettier": "1.17.0",
+    "gh-pages": "2.0.1"
   },
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build",
-    "clean": "lerna clean",
-    "changelog": "lerna-changelog",
-    "precommit": "lint-staged",
-    "start": "lerna run start",
-    "test": "echo 'it worked'"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build --message='Published gh-pages [ci skip]' ",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "lint-staged": {
     "*.js": [
@@ -32,5 +43,10 @@
     ],
     "*.json": "jsonlint",
     ".*rc": "jsonlint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
