@@ -31,8 +31,7 @@
     "build": "react-scripts build",
     "deploy": "gh-pages -d build --message='Published gh-pages [ci skip]' ",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "precommit": "lint-staged"
+    "eject": "react-scripts eject"
   },
   "lint-staged": {
     "*.js": [
@@ -44,5 +43,10 @@
     ],
     "*.json": "jsonlint",
     ".*rc": "jsonlint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
