@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
-    "husky": "2.2.0",
+    "husky": "2.3.0",
     "jsonlint": "1.6.3",
     "lerna": "2.5.1",
     "lerna-changelog": "0.7.0",
