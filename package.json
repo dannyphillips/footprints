@@ -7,7 +7,7 @@
     "husky": "2.3.0",
     "jsonlint": "1.6.3",
     "lerna": "2.5.1",
-    "lerna-changelog": "0.7.0",
+    "lerna-changelog": "0.8.2",
     "lint-staged": "8.1.7",
     "prettier": "1.17.0"
   },
