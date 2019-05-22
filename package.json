@@ -5,14 +5,14 @@
   "license": "MIT",
   "dependencies": {
     "change-case": "3.1.0",
-    "firebase": "4.8.0",
+    "firebase": "6.0.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-router": "5.0.0",
-    "react-router-dom": "4.2.2",
-    "react-scripts": "1.0.17",
-    "semantic-ui-react": "0.77.1",
-    "styled-components": "2.2.4"
+    "react-router-dom": "5.0.0",
+    "react-scripts": "3.0.1",
+    "semantic-ui-react": "0.83.0",
+    "styled-components": "3.4.10"
   },
   "devDependencies": {
     "husky": "2.3.0",
@@ -20,8 +20,7 @@
     "lerna": "2.5.1",
     "lerna-changelog": "0.7.0",
     "lint-staged": "8.1.7",
-    "prettier": "1.17.1",
-    "gh-pages": "2.0.1"
+    "prettier": "1.17.1"
   },
   "workspaces": [
     "packages/*"
@@ -29,7 +28,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build --message='Published gh-pages [ci skip]' ",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -48,5 +46,17 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

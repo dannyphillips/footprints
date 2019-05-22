@@ -24,11 +24,7 @@ jobs:
       - save_cache:
           paths: node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
-        
+
       - run:
           name: Run Unit Tests
           command: yarn test
-
-      - run:
-          name: Deploy to gh-pages
-          command: lerna deploy
