@@ -18,7 +18,7 @@ jobs:
           command: echo 'export PATH=${PATH}:${HOME}/footprints/node_modules/.bin' >> $BASH_ENV
 
       - run:
-          name: Install Dependencies & Build App
+          name: Install Dependencies
           command: yarn
 
       - save_cache:
@@ -28,3 +28,11 @@ jobs:
       - run:
           name: Run Unit Tests
           command: yarn test
+
+      - run:
+          name: Build App
+          command: yarn build
+
+      - run:
+          name: Deploy to Firebase
+          command: yarn deploy
