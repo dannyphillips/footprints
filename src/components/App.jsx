@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import styled from "styled-components";
 import * as firebase from "firebase";
 
@@ -53,7 +53,7 @@ export class App extends Component {
     const { activeItem } = this.state;
 
     return (
-      <BrowserRouter>
+      <Router>
         <StyledApp>
           <AuthButton />
           <Route path="/" component={Navbar} activeItem={activeItem}/>
@@ -64,7 +64,7 @@ export class App extends Component {
           <PrivateRoute path="parks/:name" component={Park} />
           <PrivateRoute path="/me" component={Profile} />
         </StyledApp>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
