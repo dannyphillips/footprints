@@ -20,7 +20,7 @@
     "lerna": "2.5.1",
     "lerna-changelog": "0.7.0",
     "lint-staged": "8.1.7",
-    "prettier": "1.17.1"
+    "prettier": "1.18.1"
   },
   "workspaces": [
     "packages/*"
