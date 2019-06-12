@@ -5,13 +5,13 @@ import * as firebase from "firebase";
 
 import { Navbar } from './Navbar';
 import { Home } from "./Home";
-import { Park } from "./Park";
-import { Profile } from "./Profile";
-import { Signin } from "./Signin";
-import { Signup } from "./Signup";
-import { Login } from "./Login";
-import { PrivateRoute } from "./PrivateRoute";
-import { AuthButton } from "./AuthButton";
+// import { Park } from "./Park";
+// import { Profile } from "./Profile";
+// import { Signin } from "./Signin";
+// import { Signup } from "./Signup";
+// import { Login } from "./Login";
+// import { PrivateRoute } from "./PrivateRoute";
+// import { AuthButton } from "./AuthButton";
 
 // Initialize Firebase
 var config = {
@@ -55,14 +55,14 @@ export class App extends Component {
     return (
       <Router>
         <StyledApp>
-          <AuthButton />
+          {/* <AuthButton /> */}
           <Route path="/" component={Navbar} activeItem={activeItem}/>
-          <Route path="/login" component={Login} />
+          {/* <Route path="/login" component={Login} />
           <Route path="/signin" component={Signin} />
-          <Route path="/signup" component={Signup} />
-          <PrivateRoute path="/home" component={Home} />
-          <Route path="parks/:name" component={Park} />
-          <PrivateRoute path="/me" component={Profile} />
+          <Route path="/signup" component={Signup} /> */}
+          <Route path="/home" component={Home} />
+          {/* <Route path="parks/:name" component={Park} /> */}
+          {/* <PrivateRoute path="/me" component={Profile} /> */}
         </StyledApp>
       </Router>
     );
