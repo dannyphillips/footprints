@@ -61,7 +61,7 @@ export class App extends Component {
           <Route path="/signin" component={Signin} />
           <Route path="/signup" component={Signup} />
           <PrivateRoute path="/home" component={Home} />
-          <PrivateRoute path="parks/:name" component={Park} />
+          <Route path="parks/:name" component={Park} />
           <PrivateRoute path="/me" component={Profile} />
         </StyledApp>
       </Router>
