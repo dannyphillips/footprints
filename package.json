@@ -8,16 +8,16 @@
     "firebase": "6.1.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-router": "5.0.0",
+    "react-router": "5.0.1",
     "react-router-dom": "5.0.1",
     "react-scripts": "3.0.1",
     "semantic-ui-react": "0.83.0",
-    "styled-components": "3.4.10"
+    "styled-components": "4.3.1"
   },
   "devDependencies": {
     "husky": "2.4.0",
     "jsonlint": "1.6.3",
-    "lint-staged": "8.1.7",
+    "lint-staged": "8.2.0",
     "prettier": "1.18.2"
   },
   "scripts": {
