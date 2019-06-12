@@ -17,14 +17,9 @@
   "devDependencies": {
     "husky": "2.4.0",
     "jsonlint": "1.6.3",
-    "lerna": "2.5.1",
-    "lerna-changelog": "0.7.0",
     "lint-staged": "8.1.7",
     "prettier": "1.18.2"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
