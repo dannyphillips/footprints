@@ -28,6 +28,7 @@
     "deploy": "firebase deploy",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://footprints-442fb.firebaseapp.com",
   "lint-staged": {
     "*.js": [
       "prettier --trailing-comma es5 --single-quote --write",
