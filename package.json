@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "firebase-tools": "^7.3.0",
-    "husky": "3.0.4",
+    "husky": "3.0.5",
     "jsonlint": "1.6.3",
     "lint-staged": "9.2.5",
     "prettier": "1.18.2"
