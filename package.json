@@ -18,7 +18,7 @@
     "firebase-tools": "^8.9.0",
     "husky": "4.2.5",
     "jsonlint": "1.6.3",
-    "lint-staged": "10.2.11",
+    "lint-staged": "10.2.13",
     "prettier": "2.1.0"
   },
   "scripts": {
