@@ -18,14 +18,14 @@ export class Parks extends React.Component {
               <Image src={posters[park]} />
               <Card.Content>
                 <Card.Header>Yellowstone National Park</Card.Header>
-                <Card.Meta>Cheyenne, Wyoming</Card.Meta>
+                <Card.Meta>City, State</Card.Meta>
                 <Card.Description>
-                  Daniel is a comedian living in Nashville.
+                  Here is a description of the park.
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>
                 <Label circular color="red">
-                  Visited
+                  Not Visited
                 </Label>
               </Card.Content>
             </StyledCard>

@@ -2,6 +2,6 @@ import React from "react"
 export class Home extends React.Component {
 
   render() {
-    return <div>Welcome to the Footprints App!</div>;
+    return <h1>Welcome to the Footprints App!</h1>;
   }
 }
