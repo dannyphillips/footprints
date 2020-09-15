@@ -22,17 +22,17 @@ export class Navbar extends Component {
 
     return <StyledNav>
         <StyledMenu stackable inverted>
-          <Link to="/home">
+          <Link to="/">
             <StyledItem onClick={this.handleItemClick}>
               <img src={nps} alt={nps} />
             </StyledItem>
           </Link>
-          <Link to="/home">
+          <Link to="/parks">
             <StyledItem name="parks" active={activeItem === "parks"}>
               Parks
             </StyledItem>
           </Link>
-          <Link to="/signin">
+          {/* <Link to="/signin">
             <StyledItem name="sign-in" active={activeItem === "sign-in"}>
               Sign-In
             </StyledItem>
@@ -46,7 +46,7 @@ export class Navbar extends Component {
             <StyledItem name="sign-up" active={activeItem === "sign-up"}>
               Sign-up
             </StyledItem>
-          </Link>
+          </Link> */}
           <Link to="/me">
             <StyledItem name="my-profile" active={activeItem === "my-profile"}>
               My Profile

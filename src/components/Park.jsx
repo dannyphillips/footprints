@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import changeCase from 'change-case';
+import { capitalCase } from 'change-case';
 import { Label } from 'semantic-ui-react';
 import * as posters from '../posters/posters';
 
@@ -37,7 +37,7 @@ export class Park extends Component {
     debugger;
     return (
       <div>
-        <h2>{changeCase.titleCase(name)} National Park</h2>
+        <h2>{capitalCase(name)} National Park</h2>
         <h3>id: {id}</h3>
         <h3>Founded: {date_founded}</h3>
         <h3>Size: {size}</h3>
