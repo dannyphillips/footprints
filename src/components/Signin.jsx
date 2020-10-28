@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
-import * as firebase from 'firebase';
+import firebase from 'firebase/app';
 
 export class Signin extends Component {
   static defaultProps = {};
-  state = { 
+  state = {
     email: '',
     password: ''
    }
@@ -26,15 +26,15 @@ export class Signin extends Component {
 
   render() {
     return <Form onSubmit={this.handleSubmit}>
-        <Form.Input 
+        <Form.Input
           name="email"
-          label="Email" 
-          placeholder="Enter your email" 
+          label="Email"
+          placeholder="Enter your email"
           onChange={this.handleChange} />
-        <Form.Input 
+        <Form.Input
           name="password"
-          label="Password" 
-          placeholder="Enter your password" 
+          label="Password"
+          placeholder="Enter your password"
           onChange={this.handleChange} />
         <Button type="submit">Sign In</Button>
       </Form>;
