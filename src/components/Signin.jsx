@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import firebase from 'firebase/app';
+import 'firebase/database';
 
 export class Signin extends Component {
   static defaultProps = {};
