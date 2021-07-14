@@ -14,6 +14,8 @@ import { Login } from "./Login";
 import { PrivateRoute } from "./PrivateRoute";
 // import { AuthButton } from "./AuthButton";
 
+import './App.css'
+
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyADAH0pRPowXXZcyWhsPTk9P0_49GliAEI",
