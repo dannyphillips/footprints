@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+import { redirect } from "react-router-dom";
 import { fakeAuth } from "./fakeAuth";
 
 export class Login extends React.Component {
@@ -20,7 +20,7 @@ export class Login extends React.Component {
     const { redirectToReferrer } = this.state;
 
     if (redirectToReferrer === true) {
-      return <Redirect to={from} />;
+      return redirect({from});
     }
 
     return (
