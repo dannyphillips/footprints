@@ -20,7 +20,7 @@
     "firebase-tools": "12.4.8",
     "husky": "8.0.3",
     "jsonlint": "1.6.3",
-    "lint-staged": "14.0.0",
+    "lint-staged": "14.0.1",
     "prettier": "3.0.2"
   },
   "peerDependencies": {
