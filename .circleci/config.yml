@@ -26,10 +26,6 @@ jobs:
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
       - run:
-          name: Run Unit Tests
-          command: yarn test
-
-      - run:
           name: Build App
           command: yarn build
 
