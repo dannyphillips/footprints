@@ -24,8 +24,8 @@ jobs:
           command: yarn build
 
       - run:
-      name: Create SA key JSON
-      command: echo $GOOGLE_APPLICATION_CREDENTIALS > "$HOME"/gcloud.json
+          name: Create SA key JSON
+          command: echo $GOOGLE_APPLICATION_CREDENTIALS > "$HOME"/gcloud.json
 
       - run:
           name: Deploy to Firebase
