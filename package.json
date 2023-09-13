@@ -17,7 +17,7 @@
     "styled-components": "6.0.7"
   },
   "devDependencies": {
-    "firebase-tools": "12.5.2",
+    "firebase-tools": "12.5.4",
     "husky": "8.0.3",
     "jsonlint": "1.6.3",
     "lint-staged": "14.0.1",
