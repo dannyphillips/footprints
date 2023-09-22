@@ -27,6 +27,8 @@ import { Signup } from "./Signup";
 import { Login } from "./Login";
 // import { AuthButton } from "./AuthButton";
 
+import './App.css'
+
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyADAH0pRPowXXZcyWhsPTk9P0_49GliAEI",
