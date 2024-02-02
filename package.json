@@ -6,7 +6,7 @@
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "change-case": "5.2.0",
-    "firebase": "10.5.0",
+    "firebase": "10.8.0",
     "postcss": "^8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",
