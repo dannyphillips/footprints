@@ -34,7 +34,6 @@ export class Park extends Component {
         tags
       }
     } = this.props;
-    debugger;
     return (
       <div>
         <h2>{capitalCase(name)} National Park</h2>
@@ -47,9 +46,8 @@ export class Park extends Component {
         <h3>Activities: {activiites}</h3>
         <h3>Tags:
           {
-            tags.forEach(function(tag){
-              // TODO: forEach does not return anything, will need to use a different function on Array
-              return <Label color="olive" tag>{tag}</Label>
+            tags.map(function(tag){
+              return <Label key={tag} color="olive" tag>{tag}</Label>
             })
           }
         </h3>

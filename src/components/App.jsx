@@ -4,7 +4,6 @@ import {
   Routes,
   Route,
   Navigate,
-  Outlet,
 } from "react-router-dom";
 import styled from "styled-components";
 
@@ -42,7 +41,7 @@ const StyledApp = styled.div`
   text-align: center;
 `;
 
-const PrivateRoute = () => {
+const PrivateRoute = ({ children }) => {
   const fakeAuth = {
     isAuthenticated: false,
     authenticate(cb) {
@@ -52,9 +51,9 @@ const PrivateRoute = () => {
       this.isAuthenticated = false;
     },
   };
-  // If authorized, return an outlet that will render child elements
+  // If authorized, return children element
   // If not, return element that will navigate to login page
-  return fakeAuth ? <Outlet /> : <Navigate to="/login" />;
+  return fakeAuth.isAuthenticated ? children : <Navigate to="/login" />;
 };
 export class App extends Component {
   state = {};
