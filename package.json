@@ -11,9 +11,11 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0 --port 4173",
-    "test": "vitest run"
+    "test": "vitest run",
+    "start": "node server/server.cjs"
   },
   "dependencies": {
+    "express": "^4.22.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.3"
