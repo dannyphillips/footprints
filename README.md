@@ -1,3 +1,5 @@
+> **Archived.** This app now lives in the [dannyphillips/apps](https://github.com/dannyphillips/apps) monorepo at [`apps/footprints`](https://github.com/dannyphillips/apps/tree/main/apps/footprints). This repository is read-only.
+
 # Footprints
 
 A mobile-first log for visiting all 59 U.S. national parks. Each park is shown with its album poster from `static/posters/*.jpg`.
